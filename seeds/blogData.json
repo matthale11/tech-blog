@@ -2,20 +2,17 @@
     {
       "title": "Blog Post #1",
       "body_text": "I like to write about programming. It's the best!",
-      "date_created": "2021-01-14 00:00:00",
-      "user_id": 1
+      "date_created": "2021-01-14 00:00:00"
     },
     {
       "title": "Blog Post #2",
       "body_text": "Here's another example of me writing about coding!",
-      "date_created": "2021-02-20 00:00:00",
-      "user_id": 1
+      "date_created": "2021-02-20 00:00:00"
     },
     {
       "title": "Blog Post #3",
       "body_text": "You should see my other blog.",
-      "date_created": "2021-03-11 00:00:00",
-      "user_id": 2
+      "date_created": "2021-03-11 00:00:00"
     }
   ]
   
