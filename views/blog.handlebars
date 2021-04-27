@@ -4,6 +4,19 @@
   <p>Created by {{user.username}} on {{format_date date_created}}</p>
 </div>
 <div class="row mt-4"></div>
+  {{#if comments.length}}
+  <div class="col-md-6 comment-list">
+    <h3>Previous Comments:</h3>
+    {{#each comments as |comment|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <p>{{comment.comment_text}}</p>
+        <p>Created by {{comment.user_id}} on {{format_date comment.date_added}}</p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
   <div class="col-md-6">
     <form class="form new-comment-form">
       <div class="form-group">
@@ -15,19 +28,6 @@
       </div>
     </form>
   </div>
-    {{#if comments.length}}
-    <div class="col-md-6 comment-list">
-      <h3>Previous Comments:</h3>
-      {{#each comments as |comment|}}
-      <div class="row mb-2">
-        <div class="col-md-8">
-          <p>{{comment.comment_text}}</p>
-          <p>Created by {{comment.user_id}} on {{format_date comment.date_added}}</p>
-        </div>
-      </div>
-      {{/each}}
-    </div>
-  {{/if}}
 </div>
 
 <script src="./js/comment.js"></script>
