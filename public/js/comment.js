@@ -13,6 +13,7 @@ const newFormHandler = async (event) => {
       });
   
       if (response.ok) {
+          // TODO: Want to reload single blog page when comment is submitted??
         document.location.replace('/dashboard');
       } else {
         alert('Failed to create post');
