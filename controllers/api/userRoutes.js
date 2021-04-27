@@ -37,6 +37,8 @@ router.post('/login', async (req, res) => {
     }
 
     req.session.save(() => {
+      // TODO: Find error here (some issues with the session) that messes up the /dashboard redirect
+      console.log(userData);
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       
